@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#191521"><title>Nexet — тестовая версия</title>
-  <meta name="description" content="Тестовый интерфейс Nexet: шаблоны торговых ботов и пополнение баланса.">
+  <meta name="theme-color" content="#191521"><title>Nexet</title>
+  <meta name="description" content="Nexet: шаблоны торговых ботов и пополнение баланса.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%239c55f6'/%3E%3Cpath d='m23 36 9-9 9 9' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261002-2">
 </head>
 <body>
   <div class="language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg> RU</div>
@@ -16,7 +16,6 @@
         <h1>Вы отдыхаете, а<br>боты работают</h1>
         <p class="lead">Платформа для автоматизированной торговли криптовалютой, которая предоставляет торговых ботов, бэктесты, статистику и работает через защищённые API-подключения.</p>
         <button id="authorize" class="primary authorize">Авторизоваться</button>
-        <p class="demo-note">Тестовая версия · вход без регистрации</p>
       </section>
       <section class="benefits" aria-labelledby="benefits-title">
         <h2 id="benefits-title">Преимущества Nexet</h2>
@@ -30,13 +29,12 @@
       </section>
     </div>
     <section class="how"><h2>Как это работает</h2><div class="steps"><div><span>01</span><h3>Авторизуйтесь</h3><p>Войдите одним нажатием</p></div><div><span>02</span><h3>Выберите бота</h3><p>Посмотрите готовые шаблоны</p></div><div><span>03</span><h3>Пополните баланс</h3><p>Выберите сеть для перевода</p></div></div></section>
-    <footer>Демонстрационный макет. Показатели и условия приведены для примера.</footer>
   </main>
   <div id="workspace" class="workspace" hidden>
     <aside class="sidebar">
       <div class="sidebar-brand"><a class="brand" href="#bots" aria-label="Nexet, боты"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5"/></svg></span><span>Nexet</span></a><span class="ru">RU</span></div>
       <nav aria-label="Основное меню"><a id="bots-nav" class="nav-bots" href="#bots"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M9 4h6M8 12v3M16 12v3M1 12h3M20 12h3"/></svg>Боты</a></nav>
-      <div class="sidebar-bottom"><span class="test-label">Тестовая версия</span><button id="logout" class="logout"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v16h5M9 12h12M16 7l5 5-5 5"/></svg>Выйти</button></div>
+      <div class="sidebar-bottom"><button id="logout" class="logout"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v16h5M9 12h12M16 7l5 5-5 5"/></svg>Выйти</button></div>
     </aside>
     <main class="content">
       <section id="bots-page">
@@ -44,7 +42,7 @@
         <div class="deposit-banner"><h2>Пополните баланс:</h2><a class="primary topup" href="#deposit">Пополнить баланс</a></div>
         <div class="section-heading"><h2>Наши готовые боты</h2><p>Скопируйте наших ботов в два клика</p></div>
         <div id="bot-cards" class="bot-cards"></div>
-        <p class="sample-caption">Демонстрационные показатели из макета. Запуск ботов в тестовой версии недоступен.</p>
+        <p class="sample-caption">Показатели приведены для примера. Запуск ботов пока недоступен.</p>
       </section>
       <section id="deposit-page" hidden>
         <a href="#bots" class="back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>К ботам</a>
@@ -57,12 +55,11 @@
             <div class="address-row"><code id="address"></code><button id="copy" class="copy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg><span>Копировать</span></button></div>
             <p id="network-warning" class="network-warning"></p>
           </div>
-          <div class="demo-info"><span class="info-icon">i</span><p>Тестовая версия. Автоматическое зачисление средств пока не подключено.</p></div>
         </div>
       </section>
     </main>
   </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=20261002-2"></script>
 </body>
 </html>
